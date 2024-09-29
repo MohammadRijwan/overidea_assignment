@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927858756788",
+    "project_id": "overidea-assignment",
+    "storage_bucket": "overidea-assignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927858756788:android:2eb0f2521e44c7f4c91be1",
+        "android_client_info": {
+          "package_name": "com.example.overidea_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYEVbxfPfFMP7_jTnpcxuK2L2T7MQ5oRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
