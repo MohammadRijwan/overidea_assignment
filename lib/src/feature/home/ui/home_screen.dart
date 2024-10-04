@@ -8,7 +8,7 @@ import 'package:overidea_assignment/src/core/utils/app_locale.dart';
 import 'package:overidea_assignment/src/feature/auth/domain/model/user.dart';
 import 'package:overidea_assignment/src/feature/auth/login/login_screen.dart';
 import 'package:overidea_assignment/src/feature/chat/ui/chat_screen.dart';
-import 'package:overidea_assignment/src/feature/map/map_screen.dart';
+import 'package:overidea_assignment/src/feature/map/google_map_screen.dart';
 
 import 'home_vm.dart';
 
@@ -76,7 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 onTap: () {
                   context.pop();
-                  context.pushNamed(MapScreen.route);
+                  // context.pushNamed(MapScreen.route);
+                  context.pushNamed(GoogleMapScreen.route);
                 },
                 title: Text(
                   AppLocale.map.getString(context),

@@ -4,6 +4,7 @@ import 'package:overidea_assignment/splash_screen.dart';
 import 'package:overidea_assignment/src/feature/auth/domain/model/user.dart';
 import 'package:overidea_assignment/src/feature/auth/registration/signup_screen.dart';
 import 'package:overidea_assignment/src/feature/home/ui/home_screen.dart';
+import 'package:overidea_assignment/src/feature/map/google_map_screen.dart';
 import 'package:overidea_assignment/src/feature/map/map_screen.dart';
 
 import '../../feature/auth/login/login_screen.dart';
@@ -33,6 +34,7 @@ class AppRoute {
           getSignUpRoute(),
           getHomeRoute(),
           getMapRoute(),
+          getGoogleMapRoute(),
           getChatRoute(),
         ]);
   }
@@ -67,6 +69,14 @@ class AppRoute {
         name: MapScreen.route,
         builder: (BuildContext context, GoRouterState state) =>
             const MapScreen());
+  }
+
+  static GoRoute getGoogleMapRoute() {
+    return GoRoute(
+        path: GoogleMapScreen.route,
+        name: GoogleMapScreen.route,
+        builder: (BuildContext context, GoRouterState state) =>
+            const GoogleMapScreen());
   }
 
   static GoRoute getChatRoute() {
